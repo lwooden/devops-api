@@ -45,7 +45,6 @@ jobs:
 
   deploy:
     <<: *defaults
-
     steps:
       - attach_workspace: # attach what you did in previous job in this job
           at: .
