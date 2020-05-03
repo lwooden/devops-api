@@ -4,7 +4,7 @@
     "generateOperationScopedModels": true,
     "apiInfo": {
       "title": "The Updated Loopback API",
-      "description": "the api is updated"
+      "description": "the api is not updated"
     }
   }
 }
