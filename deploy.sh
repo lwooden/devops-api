@@ -4,7 +4,7 @@
 # Set up our 3 main pieces
 TASK_DEFINITION="devops-api"
 SERVICE="api-service"
-CLUSTER="devops-cluster"
+CLUSTER="devops-ecs-cluster"
 
 set -e
 
