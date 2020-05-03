@@ -16,14 +16,16 @@ echo "Building image ..."
 # also set this image to the `latest` tag as well
 docker build -t $IMAGE:$CIRCLE_SHA1 -t $IMAGE:latest .
 
-echo "Attempting AWS ECR Login"
+echo "<----Attempting AWS ECR Login---->"
 
 eval $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
 
 docker push $IMAGE:latest
 docker push $IMAGE:$CIRCLE_SHA1
 
-echo "Updating service ..."
+echo "<----Docker Push Completed---->"
+
+echo "<----Updating service---->"
 
 # Get current task definition as base of the update
 # this gives us a perfect template to start from
