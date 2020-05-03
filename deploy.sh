@@ -10,7 +10,7 @@ set -e
 
 echo "Building image ..."
 
-# $IMAGE is available through our command in our CircleCI config.yml deploy job.  It's sourced via $BASH_ENV which is a CircleCI var.
+# $IMAGE is available through our command in our CircleCI config.yml deployy job.  It's sourced via $BASH_ENV which is a CircleCI var.
 # $CIRCLE_SHA1 is also a CircleCI var for the SHA of this build.  Useful for unique tagging.
 # build the image using the string we made in the `deploy` job and also tag it with our SHA
 # also set this image to the `latest` tag as well
